@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Der Ruppi macht's</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Der Ruppi macht's</h1>
+                    <p class="tagline">Ihr Partner für professionelle Entrümpelung</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="ueber-uns.html">Über uns</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="referenzen.html">Referenzen</a></li>
+                        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontakt</h1>
+                <p>Wir freuen uns auf Ihre Anfrage</p>
+            </div>
+        </section>
+
+        <!-- Kontaktinformationen -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefon</h3>
+                        <p><strong>0123 / 456 789 0</strong></p>
+                        <p class="small-text">Mo-Fr: 7:00 - 18:00 Uhr<br>Sa: 8:00 - 14:00 Uhr</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>E-Mail</h3>
+                        <p><strong>info@ruppi-machts.de</strong></p>
+                        <p class="small-text">Wir antworten innerhalb<br>von 24 Stunden</p>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Adresse</h3>
+                        <p><strong>Musterstraße 123</strong></p>
+                        <p class="small-text">80333 München<br>Deutschland</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontaktformular -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-intro">
+                    <h2>Anfrageformular</h2>
+                    <p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück.</p>
+                </div>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="anrede">Anrede *</label>
+                            <select id="anrede" name="anrede" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="herr">Herr</option>
+                                <option value="frau">Frau</option>
+                                <option value="divers">Divers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="firma">Firma (optional)</label>
+                            <input type="text" id="firma" name="firma">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vorname">Vorname *</label>
+                            <input type="text" id="vorname" name="vorname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nachname">Nachname *</label>
+                            <input type="text" id="nachname" name="nachname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">Telefon *</label>
+                            <input type="tel" id="telefon" name="telefon" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="strasse">Straße & Hausnummer *</label>
+                        <input type="text" id="strasse" name="strasse" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="plz">PLZ *</label>
+                            <input type="text" id="plz" name="plz" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ort">Ort *</label>
+                            <input type="text" id="ort" name="ort" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="leistung">Gewünschte Leistung *</label>
+                        <select id="leistung" name="leistung" required>
+                            <option value="">Bitte wählen</option>
+                            <option value="haushaltsaufloesung">Haushaltsauflösung</option>
+                            <option value="kellerentruempelung">Kellerentrümpelung</option>
+                            <option value="dachbodenentruempelung">Dachbodenentrümpelung</option>
+                            <option value="gewerbeaufloesung">Gewerbeauflösung</option>
+                            <option value="messie">Messie-Wohnung</option>
+                            <option value="sonstiges">Sonstiges</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="flaeche">Ungefähre Fläche in qm</label>
+                        <input type="number" id="flaeche" name="flaeche" min="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="termin">Gewünschter Termin</label>
+                        <input type="date" id="termin" name="termin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nachricht">Ihre Nachricht *</label>
+                        <textarea id="nachricht" name="nachricht" rows="6" required placeholder="Bitte beschreiben Sie Ihr Anliegen so detailliert wie möglich..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+                            Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und bin damit einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. *
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn-primary">Anfrage senden</button>
+                        <p class="form-note">* Pflichtfelder</p>
+                    </div>
+
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Öffnungszeiten & Erreichbarkeit -->
+        <section class="hours-section">
+            <div class="container">
+                <h2>Öffnungszeiten & Erreichbarkeit</h2>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <h3>Bürozeiten</h3>
+                        <table class="hours-table">
+                            <tr>
+                                <td>Montag - Freitag:</td>
+                                <td><strong>7:00 - 18:00 Uhr</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Samstag:</td>
+                                <td><strong>8:00 - 14:00 Uhr</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Sonntag:</td>
+                                <td>Geschlossen</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="hours-card">
+                        <h3>Arbeitszeiten vor Ort</h3>
+                        <p>
+                            Unsere Entrümpelungen führen wir flexibel nach Ihren Wünschen durch:
+                        </p>
+                        <ul>
+                            <li>Wochentags von 7:00 - 20:00 Uhr</li>
+                            <li>Samstags nach Vereinbarung</li>
+                            <li>Auch außerhalb der Geschäftszeiten möglich</li>
+                            <li>Notdienst für dringende Fälle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Einzugsgebiet -->
+        <section class="service-area">
+            <div class="container">
+                <h2>Unser Einzugsgebiet</h2>
+                <p class="intro-text">
+                    Wir sind im gesamten Großraum München und Umgebung für Sie im Einsatz:
+                </p>
+                <div class="area-list">
+                    <div class="area-column">
+                        <ul>
+                            <li>München Stadt und Landkreis</li>
+                            <li>Augsburg</li>
+                            <li>Ingolstadt</li>
+                            <li>Landshut</li>
+                            <li>Freising</li>
+                        </ul>
+                    </div>
+                    <div class="area-column">
+                        <ul>
+                            <li>Dachau</li>
+                            <li>Fürstenfeldbruck</li>
+                            <li>Starnberg</li>
+                            <li>Rosenheim</li>
+                            <li>Und weitere Orte auf Anfrage</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="area-note">
+                    <strong>Ihr Ort ist nicht dabei?</strong> Kein Problem! Kontaktieren Sie uns – 
+                    für größere Projekte kommen wir auch gerne weiter.
+                </p>
+            </div>
+        </section>
+
+        <!-- Anfahrt -->
+        <section class="directions-section">
+            <div class="container">
+                <h2>So finden Sie uns</h2>
+                <div class="directions-content">
+                    <div class="directions-text">
+                        <h3>Anfahrt mit dem PKW</h3>
+                        <p>
+                            Unser Büro befindet sich in der Musterstraße 123 in München. 
+                            Parkplätze sind direkt vor dem Gebäude vorhanden.
+                        </p>
+                        <h3>Öffentliche Verkehrsmittel</h3>
+                        <p>
+                            <strong>U-Bahn:</strong> U3/U6 bis Haltestelle "Musterplatz" (5 Min. Fußweg)<br>
+                            <strong>Bus:</strong> Linie 52 bis Haltestelle "Musterstraße" (2 Min. Fußweg)
+                        </p>
+                    </div>
+                    <div class="directions-map">
+                        <div class="map-placeholder">
+                            <p>📍<br>Karte<br>Musterstraße 123<br>80333 München</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Der Ruppi macht's</h4>
+                    <p>Professionelle Entrümpelung<br>seit 2008</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <p>
+                        Telefon: 0123 / 456 789 0<br>
+                        E-Mail: info@ruppi-machts.de
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="leistungen.html">Leistungen</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Der Ruppi macht's - Alle Rechte vorbehalten | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
